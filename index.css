@@ -1,0 +1,83 @@
+/* --- layout --- */
+html, body {
+    margin: 10;
+    padding: 10;
+    background-color: rgb(223, 223, 140);
+    font-family: monospace;
+}
+
+h1{
+    font-size: 64px;
+    font-family: 'Great Vibes', cursive, sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top : 0 ;
+    margin-bottom: 2px;
+    font-family: monospace;
+}
+
+.container {
+    max-width: 600px;
+    width : 100%;
+    margin : 0 auto;
+    text-align: center;
+}
+
+
+
+/* --- grid --- */
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    border: solid 10px black;
+    margin: 0 auto;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* --- display properties --- */
+.apple {
+    background-color: crimson;
+}
+
+.snake {
+    background-color: chartreuse;
+}
+
+#message{
+    display : none ; 
+    margin : 15px
+}
+
+
+/* --- buttons ---*/
+button {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 35px 0px ;
+    padding: 5px 12px;
+    background: rgb(210, 226, 164);
+    box-shadow: 10px 5px 20px rgb(207, 220, 168);
+    border: 3px solid black;
+    border-radius: 3px;
+    
+}
+
+button:hover,
+button:focus{
+    cursor: pointer;
+    background: rgb(182, 180, 180);
+}
+
+button:active{
+    background: yellow;
+}
