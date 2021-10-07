@@ -1,4 +1,4 @@
-/* --- layout --- */
+/* --- typographics --- */
 html, body {
     margin: 10;
     padding: 10;
@@ -18,13 +18,23 @@ h2 {
     font-family: monospace;
 }
 
+#message{
+    display : none ; /*gets displayed by JS*/
+    margin : 15px
+}
+
+.small {
+    margin-top: 40px;
+    font-size: 11px
+}
+
+/* --- layout ---*/
 .container {
     max-width: 600px;
     width : 100%;
     margin : 0 auto;
     text-align: center;
 }
-
 
 
 /* --- grid --- */
@@ -42,19 +52,13 @@ h2 {
     height: 20px;
 }
 
-
-/* --- display properties --- */
 .apple {
     background-color: crimson;
 }
 
 .snake {
-    background-color: chartreuse;
-}
-
-#message{
-    display : none ; 
-    margin : 15px
+    background-color: rgb(15, 167, 15);
+    /* chartreuse; */
 }
 
 

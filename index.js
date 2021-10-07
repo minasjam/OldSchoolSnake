@@ -35,7 +35,7 @@ if (localStorage.getItem("high")){
 document.addEventListener("keydown", event => control(event))
 
 // the pause btn was pushed
-pauseBtn.addEventListener("click", pauseTheGame)
+pauseBtn.addEventListener("click", () => pauseTheGame())
 
 // the start btn was pushed
 startBtn.addEventListener("click", () => startGame())
@@ -114,6 +114,9 @@ function control(event){
             break
         case "p":
             pauseTheGame()
+            break
+        case "s":
+            startGame()
             break
     }
 }
