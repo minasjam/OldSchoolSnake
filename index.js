@@ -126,9 +126,9 @@ function generateApples(){
     appleIndex = Math.floor(Math.random() * width * width);
     
     let squareIsUsed = false
-    let i = 0
-
+    
     // checks if the apple hasn't appeared inside the snake
+    let i = 0
     while (i < currentSnake.length && !squareIsUsed){
         if (appleIndex === currentSnake[i]){
             squareIsUsed = true
@@ -136,10 +136,10 @@ function generateApples(){
         i++
     }
 
-    // displays the apple
-    if (squareIsUsed){
+    //displays the apple if the index is good
+    if (squareIsUsed){ // generates a new index if the current is bad
         generateApples();
-    } else {
+    } else { //displays the apple
         squares[appleIndex].classList.add('apple');
     }
 }
